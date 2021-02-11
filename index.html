@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
+	<style>
+    /* Bootstrap CSS */
+    @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+    body
+    #tabbable {
+      background-color: #f8f8f8;
+      color: #333333;
+      font-family: "Helvetica neue",Helvetica,Arial,Sans-serif;
+      font-size: 13px;
+      line-height: 1;
+      min-height: 100vh;
+    }
+    #nav-tab {
+      border: none;
+      margin-bottom: 18px;
+    }
+    #nav-tab .nav-link {
+      background-color: #f9f9f9;
+      border: 1px solid #dddddd;
+      border-radius: 3px 3px 0 0;
+      color: #0654ba;
+      font-weight: bold;
+      line-height: 22px;
+      margin: 0 -1px -1px 0;
+      padding: 8px 20px;
+      text-decoration: none;
+    }
+    #nav-tab .nav-link:hover {
+      background-color: #ffffff;
+    }
+    #nav-tab .nav-link.active {
+      position: relative;
+      background-color: #ffffff;
+      border-bottom-color: #ffffff;
+      box-shadow: 4px -1px 0 #eeeeee;
+    }
+    #nav-tabContent {
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 3px;
+      box-shadow: 4px 4px 1px #eeeeee;
+      margin-top: -18px;
+      padding: 20px 20px 20px 15px;
+    }
+    #nav-tabContent .border-box {
+      border: 1px solid #cccccc;
+      margin-bottom: 10px;
+      padding: 10px 20px;
+    }
+    #nav-tabContent .border-box h2 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    #nav-tabContent .border-box h3 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    #nav-tabContent .border-box hr {
+      border-color: #cccccc;
+    }
+    #desc_ifr {
+      /* min-width: calc(100% - 30px);
+      max-width: calc(100% - 30px); */
+      max-width: 100%;
+      min-height: 500px;
+    }
+    @media screen and (max-width: 575px) {
+      #nav-tabContent {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  </style>
+
+	<title>eBay Listing Template - Preview</title>
+</head>
+
+<body>
+
+  <!-- #tabbale wrapper -->
+	<div class="px-sm-2 py-sm-3" id="tabbable">
+
+    <!-- nav bar for tabs start -->
+		<nav class="d-none d-sm-block">
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a aria-controls="desc_panel" aria-selected="true" class="nav-link active" data-toggle="tab" href="#desc_panel" id="desc_panel_tab" role="tab">Description</a>
+        <a aria-controls="shipping_panel" aria-selected="false" class="nav-link" data-toggle="tab" href="#shipping_panel" id="shipping_panel_tab" role="tab">Shipping and Payments</a>
+			</div><!-- #nav-tab -->
+    </nav>
+    <!-- nav bar for tabs start -->
+
+
+    <!-- tab content wrapper start -->
+		<div class="tab-content" id="nav-tabContent">
+
+      <!-- desctiption panel tab start -->
+			<div aria-labelledby="desc_panel_tab" class="tab-pane fade show active" id="desc_panel" role="tabpanel">
+				<div class="p-0 px-sm-3 pb-sm-3">
+
+
+          <div class="d-none d-sm-block text-right pt-2">
+            <span class="font-weight-bold" style="color: #767676;">eBay item number:</span> xxxxxxxxxxxx
+          </div>
+
+          <div class="d-none d-sm-block py-2">
+            Seller assumes all responsibility for this listing.
+          </div>
+
+          <div class="d-none d-sm-block mb-2 pb-1">
+            <span style="color: #5d5d5d;">Last updated on</span> <span class="font-weight-bold">Jan 01, 2020 00:00:00</span>
+          </div>
+
+          <div class="border-box d-none d-sm-block">
+						<h3>Item specifics</h3>
+						<div style="min-height: 100px;"></div>
+          </div>
+          
+
+          <!-- description div iframe wrapper start -->
+          <div id="desc_div" class="py-sm-2">
+            <iframe id="desc_ifr" width="100%" height="1000" marginheight="0" marginwidth="0" frameborder="0" src="./template.html" title="Seller's description of item"></iframe>
+          </div><!-- #desc_div -->
+          <!-- description div iframe wrapper end -->
+
+
+          <div class="border-box d-none d-sm-block mt-2">
+						<h3>Business seller information</h3>
+						<div style="min-height: 200px;"></div>
+          </div>
+
+          <div class="border-box d-none d-sm-block">
+						<h3>Return policy</h3>
+						<div style="min-height: 100px;"></div>
+          </div>
+
+          <div class="d-none d-sm-block" style="min-height: 50px;"></div>
+          
+				</div>
+      </div><!-- #desc_panel -->
+      <!-- desctiption panel tab end -->
+
+
+      <!-- shipping panel tab start -->
+			<div aria-labelledby="shipping_panel_tab" class="tab-pane fade" id="shipping_panel" role="tabpanel">
+				<div class="pt-0 px-3 pb-3">
+
+					<div class="py-2 mb-1">
+						Seller assumes all responsibility for this listing.
+					</div>
+
+					<div class="border-box">
+						<h3>Shipping and handling</h3>
+						<div style="min-height: 150px;"></div>
+						<hr>
+						<div style="min-height: 50px;"></div>
+					</div>
+
+					<div class="border-box">
+						<h3>Payment details</h3>
+						<div style="min-height: 100px;"></div>
+          </div>
+          
+				</div>
+      </div><!-- #shipping_panel -->
+      <!-- shipping panel tab end -->
+
+    </div> <!-- #nav-tabContent -->
+    <!-- tab content wrapper end -->
+    
+    
+  </div><!-- #tabbale wrapper -->
+  <!-- tabbale wrapper end -->
+  
+
+	<!-- JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(()=>{
+
+      let desc_ifr = $('#desc_ifr');
+
+      desc_ifr.on('load',function(){
+        desc_ifr.height(desc_ifr.contents().height());
+      });
+
+    });
+  </script>
+</body>
+</html>
