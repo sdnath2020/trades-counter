@@ -15,6 +15,7 @@ img {
   color: #140c40;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
+  padding-bottom: 3rem;
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -202,12 +203,14 @@ img {
 
 #banner-image-holder {
   overflow: hidden;
+  background: #ffffff;
   border-radius: 0.25rem;
   box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(107 124 147 / 30%);
 }
 
 #banner-image-margin {
   display: flex;
+  align-items: center;
   width: 300%;
   margin-left: 0;
   transition: all 800ms ease-in-out;
@@ -648,7 +651,8 @@ img {
 
 /* Footer */
 #footer {
-  color: #8c8c8c;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
   background-color: #272727;
   padding: 3rem 2rem 2rem;
 }
@@ -658,8 +662,6 @@ img {
 }
 
 .footer-single {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 15px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   line-height: 26px;
