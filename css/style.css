@@ -31,14 +31,14 @@ img {
 
 
 #header {
-  background-color: #272727;
+  background-color: #ffffff;
 }
 
 #main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.5rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 @media screen and ( max-width: 992px ) {
@@ -75,7 +75,7 @@ img {
 }
 
 #header-nav .nav-link:hover {
-  color: #ffffff;
+  color: #0a64c7;
 }
 
 @media screen and ( max-width: 992px ) {
@@ -140,8 +140,12 @@ img {
 
 .promo-single {
   width: 20%;
-  padding: 0.75rem;
+  padding: 0.25rem 0.75rem;
   text-align: center;
+}
+
+.promo-single img {
+  height: 40px;
 }
 
 .promo-single h5 {
@@ -197,15 +201,12 @@ img {
 
 #banner {
   display: none;
-  background-color: #f1f3ff;
-  padding: 1.5rem 2rem;
+  background-color: #ffffff;
 }
 
 #banner-image-holder {
   overflow: hidden;
   background: #ffffff;
-  border-radius: 0.25rem;
-  box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(107 124 147 / 30%);
 }
 
 #banner-image-margin {
@@ -349,9 +350,9 @@ img {
 
 #gallery-big-margin {
   display: flex;
-  width: 1200%;
+  width: 500%;
   margin-left: 0;
-  transition: all 800ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .gallery-big-single {
@@ -372,13 +373,6 @@ img {
 #gallery-03:checked ~ #gallery-big > #gallery-big-margin { margin-left: -200%; }
 #gallery-04:checked ~ #gallery-big > #gallery-big-margin { margin-left: -300%; }
 #gallery-05:checked ~ #gallery-big > #gallery-big-margin { margin-left: -400%; }
-#gallery-06:checked ~ #gallery-big > #gallery-big-margin { margin-left: -500%; }
-#gallery-07:checked ~ #gallery-big > #gallery-big-margin { margin-left: -600%; }
-#gallery-08:checked ~ #gallery-big > #gallery-big-margin { margin-left: -700%; }
-#gallery-09:checked ~ #gallery-big > #gallery-big-margin { margin-left: -800%; }
-#gallery-10:checked ~ #gallery-big > #gallery-big-margin { margin-left: -900%; }
-#gallery-11:checked ~ #gallery-big > #gallery-big-margin { margin-left: -1000%; }
-#gallery-12:checked ~ #gallery-big > #gallery-big-margin { margin-left: -1100%; }
 
 
 
@@ -387,6 +381,7 @@ img {
 }
 
 .gallery-thumb-single {
+  width: 20%;
   padding: 0.25rem;
 }
 
@@ -412,14 +407,7 @@ img {
 #gallery-02:checked ~ #gallery-thumb label[for=gallery-02],
 #gallery-03:checked ~ #gallery-thumb label[for=gallery-03],
 #gallery-04:checked ~ #gallery-thumb label[for=gallery-04],
-#gallery-05:checked ~ #gallery-thumb label[for=gallery-05],
-#gallery-06:checked ~ #gallery-thumb label[for=gallery-06],
-#gallery-07:checked ~ #gallery-thumb label[for=gallery-07],
-#gallery-08:checked ~ #gallery-thumb label[for=gallery-08],
-#gallery-09:checked ~ #gallery-thumb label[for=gallery-09],
-#gallery-10:checked ~ #gallery-thumb label[for=gallery-10],
-#gallery-11:checked ~ #gallery-thumb label[for=gallery-11],
-#gallery-12:checked ~ #gallery-thumb label[for=gallery-12] {
+#gallery-05:checked ~ #gallery-thumb label[for=gallery-05] {
   opacity: 1;
 }
 
@@ -555,7 +543,7 @@ img {
 /* Brand */
 #brand {
   display: none;
-  padding: 2.5rem 2rem;
+  padding: 0.5rem 2rem;
   position: relative;
 }
 
@@ -760,9 +748,3 @@ img {
     padding-right: 1rem;
   }
 }
-
-
-
-
-
-
